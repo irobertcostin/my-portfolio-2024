@@ -1,7 +1,12 @@
 import { TypeAnimation } from "react-type-animation"
 import arrowdown from "../../components/images/arrowdown.png"
 
-export default function Hero() {
+export default function Hero({ projects }) {
+
+    let scrollHandler = () => {
+        projects.current.scrollIntoView({ behavior: 'smooth' });
+    }
+
 
     return (
         <div className="overflow-hidden flex justify-center items-center relative z-20 2xl:h-[100vh]">
@@ -29,7 +34,9 @@ export default function Hero() {
             <div className="font-bold text-[#060644] text-center flex flex-col items-center gap-10 bottom-20 text-xl absolute px-10 md:px-20 md:text-3xl xl:text-3xl xl:bottom-40 xl:px-80  2xl:text-4xl">
                 <p>Crafting seamless digital experiences. Bring your web projects to life with precision and flair.</p>
                 <div className="w-full  bottom-0 flex justify-center px-4">
-                    <img alt="arrow-down-scroll" className="w-10 animate-bounce" src={arrowdown}></img>
+                    <img
+                        onClick={scrollHandler}
+                        alt="arrow-down-scroll" className="w-10 animate-bounce cursor-pointer" src={arrowdown}></img>
                 </div>
             </div>
         </div>

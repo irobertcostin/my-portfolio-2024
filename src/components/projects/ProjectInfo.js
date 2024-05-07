@@ -81,14 +81,16 @@ export default function ProjectInfo({ open, setOpen, item }) {
                                                                 <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{item.about}</dd>
                                                             </div>
                                                         }
-                                                        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                                            <dt className="text-sm font-medium leading-6 text-gray-900">URL</dt>
-                                                            {
-                                                                item.link &&
-                                                                item.link.map((link) => (
-                                                                    <a href={link} target='_blank' alt={item.description} className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:col-start-2 sm:mt-0" >{link}</a>
-                                                                ))
-                                                            }
+                                                        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0 ">
+                                                            <dt className="text-sm font-medium leading-6 text-gray-900 ">URL</dt>
+                                                            <div className='w-full flex flex-col'>
+                                                                {
+                                                                    item.link &&
+                                                                    item.link.map((link) => (
+                                                                        <a href={link} target='_blank' alt={item.description} className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:col-start-2 sm:mt-0" >{link}</a>
+                                                                    ))
+                                                                }
+                                                            </div>
                                                         </div>
                                                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                                                             <dt className="text-sm font-medium leading-6 text-gray-900">Features</dt>

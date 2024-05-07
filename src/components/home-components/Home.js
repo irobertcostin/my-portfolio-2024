@@ -14,7 +14,7 @@ export default function Home({ projects, services, about, contact }) {
 
     return (
         <>
-            <Hero />
+            <Hero projects={projects} />
             <Projects projects={projects} />
             <Services services={services} />
             <About about={about} contact={contact} />
