@@ -1,5 +1,5 @@
 
-import { Fragment, useEffect } from 'react'
+import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -7,9 +7,6 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 
 
 export default function ProjectInfo({ open, setOpen, item }) {
-
-
-    useEffect(() => { console.log(item) }, [item])
 
 
     return (
@@ -26,7 +23,6 @@ export default function ProjectInfo({ open, setOpen, item }) {
                 >
                     <div className="fixed inset-0 bg-black bg-opacity-70 transition-opacity" />
                 </Transition.Child>
-
                 <div className="fixed inset-0 overflow-hidden ">
                     <div className="absolute inset-0 overflow-hidden">
                         <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 ">
