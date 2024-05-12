@@ -12,7 +12,9 @@ export default function About({ about, contact }) {
 
             <div className=" py-20 grid grid-cols-3  xl:grid-cols-5 gap-2 max-w-7xl">
                 <div className="overflow-hidden ">
-                    <img src="https://res.cloudinary.com/dqvazcqdl/image/upload/v1715025163/Screenshot_2023-12-26_at_11.56.10_h7i77x.png" alt="avatar" className="rounded-lg shadow-lg"></img>
+                    <img
+                        src="https://res.cloudinary.com/dqvazcqdl/image/upload/v1715525818/Screenshot_2024-05-12_at_17.56.33_bpbkor.png" alt="avatar" className="rounded-lg shadow-lg"></img>
+
                 </div>
                 <div className="col-span-2 col-start-2 row-span-2 rounded-lg bg-amber-500 flex flex-col justify-center p-4 gap-5 md:py-10 md:p-8 xl:justify-start xl:py-6">
                     <p className="font-extrabold text-black text-3xl md:text-4xl">I`M ROBERT</p>

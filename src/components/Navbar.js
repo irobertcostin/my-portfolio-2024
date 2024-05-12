@@ -139,7 +139,7 @@ export default function Navbar({ services, about, contact, projects }) {
                         </div>
                     </Dialog.Panel>
                 </Dialog>
-            </header >
-        </nav >
+            </header>
+        </nav>
     )
 }
